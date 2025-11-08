@@ -4537,6 +4537,638 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
     </section>
+    <section class="section payment-section" id="payment">
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-title">
+                <h2>Secure Payment Methods</h2>
+                <p>Experience seamless transactions with our advanced, secure payment options designed for global clients.</p>
+            </div>
+
+            <div class="payment-wrapper">
+                <!-- Payment Card 1 -->
+                <div class="payment-card fade-in">
+                    <div class="icon-container gradient-blue">
+                        <i class="fab fa-paypal"></i>
+                        <div class="icon-glow" style="color: #4361ee;"></div>
+                    </div>
+                    <h3>PayPal</h3>
+                    <p>Instant global transactions with advanced buyer protection and encryption for complete peace of mind.</p>
+                    <ul class="payment-features">
+                        <li>Instant payment processing</li>
+                        <li>Advanced buyer protection</li>
+                        <li>Global availability</li>
+                        <li>Military-grade encryption</li>
+                        <li>Mobile wallet integration</li>
+                    </ul>
+                    <span class="payment-badge">Most Popular</span>
+                </div>
+
+                <!-- Payment Card 2 -->
+                <div class="payment-card fade-in">
+                    <div class="icon-container gradient-purple">
+                        <i class="fas fa-university"></i>
+                        <div class="icon-glow" style="color: #7209b7;"></div>
+                    </div>
+                    <h3>Bank Transfer</h3>
+                    <p>Direct deposit option available for both domestic and international clients with competitive exchange rates.</p>
+                    <ul class="payment-features">
+                        <li>Direct bank-to-bank transfer</li>
+                        <li>Available internationally</li>
+                        <li>Competitive exchange rates</li>
+                        <li>Secure and reliable</li>
+                        <li>Transaction tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Payment Card 3 -->
+                <div class="payment-card fade-in">
+                    <div class="icon-container gradient-green">
+                        <i class="fas fa-wallet"></i>
+                        <div class="icon-glow" style="color: #06d6a0;"></div>
+                    </div>
+                    <h3>UPI / Digital Wallets</h3>
+                    <p>Pay securely via Google Pay, PhonePe, Paytm, and other UPI apps with instant payment confirmation.</p>
+                    <ul class="payment-features">
+                        <li>Instant payment confirmation</li>
+                        <li>Mobile-friendly interface</li>
+                        <li>Zero transaction fees</li>
+                        <li>24/7 availability</li>
+                        <li>QR code support</li>
+                    </ul>
+                    <span class="payment-badge">India Only</span>
+                </div>
+
+                <!-- Payment Card 4 -->
+                <div class="payment-card fade-in">
+                    <div class="icon-container gradient-orange">
+                        <i class="fas fa-credit-card"></i>
+                        <div class="icon-glow" style="color: #ff7b00;"></div>
+                    </div>
+                    <h3>Debit / Credit Cards</h3>
+                    <p>All major cards accepted through our trusted payment gateways with tokenization for enhanced security.</p>
+                    <ul class="payment-features">
+                        <li>Visa, Mastercard, Amex supported</li>
+                        <li>Secure tokenization</li>
+                        <li>Instant processing</li>
+                        <li>Global acceptance</li>
+                        <li>3D Secure authentication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --accent: #4cc9f0;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4bb543;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --neon-blue: #00f5ff;
+            --neon-purple: #bc00ff;
+            --neon-pink: #ff00c8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            padding: 100px 0;
+            width: 100%;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .section-title h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple), var(--neon-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(188, 0, 255, 0.5);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+        
+        .section-title p {
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        /* ==========================
+           Ultra-Modern Payment Section
+        =========================== */
+        .payment-section {
+            background: radial-gradient(ellipse at center, #0f0f2d 0%, #0a0a1a 70%);
+            position: relative;
+            overflow: hidden;
+            padding: 120px 0;
+        }
+
+        .payment-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(0, 245, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(188, 0, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255, 0, 200, 0.05) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .floating-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: floatParticle 15s infinite linear;
+        }
+
+        @keyframes floatParticle {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        .payment-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .payment-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 50px 30px;
+            text-align: center;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .payment-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(67, 97, 238, 0.1), rgba(76, 201, 240, 0.1));
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: -1;
+        }
+
+        .payment-card::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple), var(--neon-pink), var(--neon-blue));
+            border-radius: 27px;
+            z-index: -2;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            filter: blur(10px);
+        }
+
+        .payment-card:hover {
+            transform: translateY(-20px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 
+                0 25px 50px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(67, 97, 238, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .payment-card:hover::before {
+            opacity: 1;
+        }
+
+        .payment-card:hover::after {
+            opacity: 0.7;
+        }
+
+        .payment-card.active {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.3),
+                0 0 25px rgba(67, 97, 238, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .payment-card .icon-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s ease;
+        }
+
+        .payment-card:hover .icon-container {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .payment-card .icon-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+
+        .payment-card:hover .icon-container::before {
+            transform: translateY(0);
+        }
+
+        .icon-glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            box-shadow: 0 0 30px currentColor;
+        }
+
+        .payment-card:hover .icon-glow {
+            opacity: 0.7;
+        }
+
+        /* Gradient Themes */
+        .gradient-blue { 
+            background: linear-gradient(135deg, #4361ee, #4cc9f0);
+            color: #4361ee;
+        }
+        
+        .gradient-purple { 
+            background: linear-gradient(135deg, #7209b7, #b5179e);
+            color: #7209b7;
+        }
+        
+        .gradient-green { 
+            background: linear-gradient(135deg, #06d6a0, #4cc9f0);
+            color: #06d6a0;
+        }
+        
+        .gradient-orange { 
+            background: linear-gradient(135deg, #ff7b00, #ffb703);
+            color: #ff7b00;
+        }
+
+        .payment-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, white, #e0e0e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .payment-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .payment-features {
+            list-style: none;
+            margin: 25px 0;
+            padding: 0;
+        }
+
+        .payment-features li {
+            padding: 10px 0;
+            color: rgba(255, 255, 255, 0.8);
+            position: relative;
+            padding-left: 30px;
+            text-align: left;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .payment-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .payment-card:hover .payment-features li {
+            transform: translateX(5px);
+        }
+
+        .payment-card:hover .payment-features li::before {
+            text-shadow: 0 0 10px var(--success);
+        }
+
+        .payment-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 15px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .payment-card:hover .payment-badge {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Section */
+        .payment-footer {
+            text-align: center;
+            margin-top: 100px;
+            position: relative;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 50px 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 3;
+        }
+
+        .payment-footer::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple), var(--neon-pink), var(--neon-blue));
+            border-radius: 27px;
+            z-index: -1;
+            opacity: 0.3;
+            filter: blur(10px);
+        }
+
+        .payment-footer h4 {
+            font-size: 32px;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .payment-footer p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .secure-badges {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .secure-badge-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .secure-badge-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .secure-badges img {
+            height: 60px;
+            filter: grayscale(100%) brightness(2);
+            opacity: 0.8;
+            transition: all 0.3s;
+        }
+
+        .secure-badge-item:hover img {
+            filter: grayscale(0%) brightness(1);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .secure-badge-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+        }
+
+        /* Animation on Scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Particle Generation */
+        .particle:nth-child(1) { width: 5px; height: 5px; top: 10%; left: 20%; animation-delay: 0s; animation-duration: 20s; }
+        .particle:nth-child(2) { width: 8px; height: 8px; top: 70%; left: 80%; animation-delay: 2s; animation-duration: 25s; }
+        .particle:nth-child(3) { width: 6px; height: 6px; top: 40%; left: 40%; animation-delay: 4s; animation-duration: 18s; }
+        .particle:nth-child(4) { width: 7px; height: 7px; top: 20%; left: 60%; animation-delay: 6s; animation-duration: 22s; }
+        .particle:nth-child(5) { width: 4px; height: 4px; top: 80%; left: 30%; animation-delay: 8s; animation-duration: 19s; }
+        .particle:nth-child(6) { width: 9px; height: 9px; top: 60%; left: 10%; animation-delay: 10s; animation-duration: 24s; }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .payment-wrapper {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .payment-wrapper {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .payment-card {
+                padding: 40px 25px;
+            }
+            
+            .secure-badges {
+                gap: 25px;
+            }
+            
+            .secure-badges img {
+                height: 50px;
+            }
+            
+            .section-title h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+    <script>
+        // Reveal animation for fade-in elements
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Advanced hover effects for payment cards
+        document.querySelectorAll('.payment-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.classList.add('active');
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.classList.remove('active');
+            });
+            
+            // Add click effect
+            card.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+
+        // Create additional floating particles dynamically
+        function createParticles() {
+            const particlesContainer = document.querySelector('.floating-particles');
+            const particleCount = 12;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random properties
+                const size = Math.random() * 8 + 3;
+                const top = Math.random() * 100;
+                const left = Math.random() * 100;
+                const delay = Math.random() * 15;
+                const duration = Math.random() * 15 + 15;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.top = `${top}%`;
+                particle.style.left = `${left}%`;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${duration}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles
+        createParticles();
+    </script>
     <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container">
