@@ -1270,6 +1270,372 @@
                 grid-template-columns: 1fr;
             }
         }
+        
+        /* Mobile-First Responsive Breakpoints */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 95%;
+                padding: 0 15px;
+            }
+            
+            .hero-content {
+                gap: 50px;
+            }
+            
+            .payment-wrapper {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+            
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .skills-tabs .tab-buttons {
+                flex-wrap: wrap;
+            }
+            
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .navbar {
+                flex-wrap: wrap;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 50px;
+                transition: left 0.3s;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .hamburger.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .hamburger.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+            
+            .modal-large {
+                max-width: 90%;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-description {
+                font-size: 1.1rem;
+            }
+            
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tab-buttons {
+                flex-direction: column;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-filters {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .project-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .project-actions {
+                flex-direction: column;
+            }
+            
+            .payment-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 30px;
+                padding: 30px 20px;
+            }
+            
+            .tech-stack {
+                flex-wrap: wrap;
+            }
+            
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-summary {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-badge {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+            
+            .stat-card {
+                padding: 15px;
+            }
+            
+            .service-card, .project-card {
+                margin: 0 5px;
+            }
+            
+            .modal-content {
+                width: 95%;
+                padding: 20px 15px;
+            }
+            
+            .profile-image {
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+            }
+            
+            .data-dashboard {
+                max-width: 100%;
+                padding: 20px;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chart-bars {
+                flex-direction: column;
+                height: auto;
+                gap: 15px;
+            }
+            
+            .chart-bar {
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .bar-fill {
+                width: 100%;
+                height: 20px !important;
+                border-radius: 10px;
+            }
+            
+            .intro-card, .stats-card, .tools-card, .philosophy-card {
+                padding: 20px 15px;
+            }
+            
+            .intro-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .payment-card {
+                padding: 30px 20px;
+            }
+            
+            .payment-features li {
+                padding-left: 25px;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .project-filters .filter-btn {
+                padding: 8px 12px;
+                font-size: 13px;
+            }
+            
+            .project-tags {
+                gap: 5px;
+            }
+            
+            .tag {
+                font-size: 11px;
+                padding: 4px 8px;
+            }
+        }
+        
+        /* Touch-friendly improvements */
+        @media (hover: none) and (pointer: coarse) {
+            .service-card:hover,
+            .project-card:hover,
+            .skill-item:hover,
+            .expertise-card:hover {
+                transform: none;
+            }
+            
+            .nav-links a::after {
+                display: none;
+            }
+            
+            .btn:active {
+                transform: scale(0.98);
+            }
+        }
+        
+        /* High-resolution displays */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .hero {
+                background-image: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+            }
+        }
+        
+        /* Print styles */
+        @media print {
+            .navbar, .back-to-top, .hero-buttons, .project-actions, .cta-buttons {
+                display: none;
+            }
+            
+            .hero {
+                background: white !important;
+                color: black !important;
+                padding: 50px 0;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -6280,6 +6646,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Animation on scroll
         window.addEventListener('scroll', checkScroll);
+         // Mobile Navigation Toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.hamburger').classList.remove('active');
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const nav = document.querySelector('.navbar');
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
     </script>
 </body>
 </html>
